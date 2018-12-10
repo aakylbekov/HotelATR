@@ -1,0 +1,132 @@
+﻿
+<!doctype html>
+<html class="no-js" lang="en">
+
+<!-- Mirrored from d29u17ylf1ylz9.cloudfront.net/hotel-atr/room-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jul 2018 11:03:12 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Room Grid View || Hotel ATR</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../Content/img/favicon.ico">
+
+    <!-- All css here -->
+    <link rel="stylesheet" href="../../Content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../Content/css/shortcode/shortcodes.css">
+    <link rel="stylesheet" href="../../Content/style.css">
+    <link rel="stylesheet" href="../../Content/css/responsive.css">
+    <script src="../../Scripts/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Header Area Start -->
+    <header class="header-area fixed header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
+                    <div class="logo">
+                        <a href="index.html"><img src="../../Content/img/logo/logo.png" alt="HotelATR"></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-8 col-sm-8 hidden-xs">
+                    @Html.Partial("_TopContacts")
+                    <!-- Mainmenu Start -->
+                    @Html.Partial("_TopMenu")
+                    <!-- Mainmenu End -->
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Area start -->
+        @Html.Partial("_MobileMenu")
+        <!-- Mobile Menu Area end -->
+    </header>
+    <!-- Header Area End -->
+    <!-- Breadcrumb Area Start-->
+    <section class="breadcrumb-area overlay-dark-2 bg-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-text text-center">
+                        <h2>room - grid view</h2>
+                        <p>A quality room of hotel ATR with sea or mountain view</p>
+                        <div class="breadcrumb-bar">
+                            <ul class="breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li>Room - grid view</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Area End -->
+
+    @RenderBody()
+
+    <!-- Client Area Start -->
+    @Html.Partial("_ClientArea")
+    <!-- Client Area End -->
+    <!-- Newsletter Area Start -->
+    <section class="newsletter-area bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-sm-12 col-xs-12">
+                    <div class="newsletter-container">
+                        <h3>NewsLetter Sign-Up</h3>
+                        <div class="newsletter-form">
+                            <form action="#" id="mc-form" class="mc-form fix">
+                                <input id="mc-email" type="email" name="email" placeholder="Enter your E-mail">
+                                <button id="mc-submit" type="submit" class="default-btn">subcribes</button>
+                            </form>
+                            <!-- mailchimp-alerts Start -->
+                            <div class="mailchimp-alerts">
+                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                            </div>
+                            <!-- mailchimp-alerts end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Area End -->
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+        @Html.Partial("_Footer")
+    </footer>
+    <!-- Footer Area End -->
+    <!-- All js here -->
+    <script src="../../Scripts/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../../Scripts/js/bootstrap.min.js"></script>
+    <script src="../../Scripts/js/owl.carousel.min.js"></script>
+    <script src="../../Scripts/js/ajax-mail.js"></script>
+    <script src="../../Scripts/js/jquery.ajaxchimp.min.js"></script>
+    <script src="../../Scripts/js/jquery.meanmenu.js"></script>
+    <script src="../../Scripts/js/jquery.counterup.min.js"></script>
+    <script src="../../Scripts/js/waypoints.min.js"></script>
+    <script src="../../Scripts/js/isotope.pkgd.min.js"></script>
+    <script src="../../Scripts/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../../Scripts/js/jquery.magnific-popup.js"></script>
+    <script src="../../Scripts/js/plugins.js"></script>
+    <script src="../../Scripts/js/main.js"></script>
+    <script src="../../Scripts/jquery.validate.js"></script>
+    <script>
+        function ValidateForm() {
+            $("#DivForm form").validate({
+                rules: {
+                    Description: "required"
+                }
+            });
+        }
+    </script>
+</body>
+</html>

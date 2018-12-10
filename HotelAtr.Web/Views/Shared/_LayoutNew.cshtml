@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+
+<!-- Mirrored from d29u17ylf1ylz9.cloudfront.net/hotel-atr/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jul 2018 11:02:55 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home Page || Hotel ATR</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon Icon -->
+    <!-- All css here -->
+    <link rel="stylesheet" href="../../Content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../Content/css/shortcode/shortcodes.css">
+    <link rel="stylesheet" href="../../Content/style.css">
+    <link rel="stylesheet" href="../../Content/css/responsive.css">
+
+    <script src="../../Scripts/js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Header Area Start -->
+    <header class="header-area fixed header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
+                    <div class="logo">
+                        <a href="index.html"><img src="../../Content/img/logo/logo.png" alt="HotelATR"></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-8 col-sm-8 hidden-xs">
+                    @Html.Partial("_TopContacts")
+                    <!-- Mainmenu Start -->
+                    @Html.Partial("_TopMenu")
+                    <!-- Mainmenu End -->
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu Area start -->
+        @Html.Partial("_MobileMenu")
+        <!-- Mobile Menu Area end -->
+    </header>
+    <!-- Header Area End -->
+    <!-- Background Area Start -->
+
+    @RenderBody()
+
+    <!-- Newsletter Area End -->
+    <!-- Footer Area Start -->
+    <footer class="footer-area">
+        @Html.Partial("_Footer")
+    </footer>
+    <!-- Footer Area End -->
+    <!-- All js here -->
+    <script src="../../Scripts/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../../Scripts/js/bootstrap.min.js"></script>
+    <script src="../../Scripts/js/owl.carousel.min.js"></script>
+    <script src="../../Scripts/js/ajax-mail.js"></script>
+    <script src="../../Scripts/js/jquery.ajaxchimp.min.js"></script>
+    <script src="../../Scripts/js/jquery.meanmenu.js"></script>
+    <script src="../../Scripts/js/jquery.counterup.min.js"></script>
+    <script src="../../Scripts/js/waypoints.min.js"></script>
+    <script src="../../Scripts/js/isotope.pkgd.min.js"></script>
+    <script src="../../Scripts/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../../Scripts/js/jquery.magnific-popup.js"></script>
+    <script src="../../Scripts/js/plugins.js"></script>
+    <script src="../../Scripts/js/main.js"></script>
+</body>
+<!-- Mirrored from d29u17ylf1ylz9.cloudfront.net/hotel-atr/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jul 2018 11:03:12 GMT -->
+</html>

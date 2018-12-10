@@ -1,0 +1,38 @@
+﻿@model HotelAtr.DAL.RoomType
+
+@{
+    ViewBag.Title = "DetailsRoomType";
+    Layout = "~/Views/Shared/_LayoutContent.cshtml";
+}
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <br />
+        <br />
+        <h2>DetailsRoomType</h2>
+        <div class="form-body">
+
+            <div>
+                <h4>RoomType</h4>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Description)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Description)
+                    </dd>
+
+                </dl>
+            </div>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.RoomTypeId }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div>
+        <br />
+        <br />
+    </div>
+    <div class="col-md-3"></div>
+</div>
